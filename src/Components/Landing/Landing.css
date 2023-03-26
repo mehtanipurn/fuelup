@@ -1,0 +1,95 @@
+.landing-header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .landing-h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .landing-p {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .fuel-products {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  
+  .product {
+    background-color: #c5f506;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .landing-h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .landing-p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .landing-button {
+    background-color: #0077cc;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005ea6;
+  }
+  
+  .why-choose-us {
+    margin-top: 50px;
+  }
+  
+  .landing-h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .landing-ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .landing-li {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .landing-img {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+   
+  .landing-h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .landing-p {
+    font-size: 18px;
+  }
+  
