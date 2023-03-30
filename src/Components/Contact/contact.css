@@ -1,0 +1,13 @@
+.CU {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 65vh;
+    width: 60vw;
+    /* line-height: 10px; */
+    font-size: 20px;
+    margin: auto;
+
+
+}

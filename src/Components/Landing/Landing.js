@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Landing.css';
 
 function Landing() {
@@ -12,14 +13,14 @@ function Landing() {
         <div className="fuel-products">
           <div className="product">
             <h2 className="landing-h2">Diesel</h2>
-            <p className = "landing-p">Price per liter: $1.50</p>
-            <button className='landing-button'>Add to Cart</button>
+            <p className = "landing-p">Price per liter: 90.20 Rs</p>
+            <Link to ="/Location"> <button className='landing-button'>Order Now</button> </Link>
           </div>
           
           <div className="product">
             <h2 className = "landing-h2">Petrol</h2>
-            <p className = "landing-p">Price per liter: $1.20</p>
-            <button className='landing-button'>Add to Cart</button>
+            <p className = "landing-p">Price per liter: 95.13 Rs</p>
+            <Link to ="/Location"> <button className='landing-button'>Order Now</button> </Link>
           </div>
           </div>
       </div>
@@ -30,14 +31,14 @@ function Landing() {
               <img className = "landing-img"src="https://img.freepik.com/premium-vector/fast-delivery-icon-express-delivery-urgent-delivery-services-stopwatch-sign_349999-859.jpg?w=1060" alt="Fast delivery" />
               <div>
                 <h3 className = "landing-h3">Fast Delivery</h3>
-                <p className = "landing-p">Get your fuel delivered within 24 hours of placing your order</p>
+                <p className = "landing-p">Get your fuel delivered within finest time of placing your order</p>
               </div>
             </li>
             <li className='landing-li'>
               <img className = "landing-img" src="https://previews.123rf.com/images/arcady31/arcady311507/arcady31150700002/42231697-secure-protected-payments-icon.jpg" alt="Secure payment" />
               <div>
                 <h3 className = "landing-h3">Secure Payment</h3>
-                <p className = "landing-p">Pay securely online using your credit card or PayPal account</p>
+                <p className = "landing-p">Pay securely online using your credit card/debit card or UPI account</p>
               </div>
             </li>
             <li className='landing-li'>

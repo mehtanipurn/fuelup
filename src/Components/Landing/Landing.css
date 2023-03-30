@@ -1,17 +1,18 @@
 .landing-header {
-    background-color: #f1f1f1;
+    background-color: #959785;
     padding: 20px;
     text-align: center;
   }
   
   .landing-h1 {
+    color: #f1e9e9;
     font-size: 48px;
     margin-bottom: 20px;
   }
   
   .landing-p {
     font-size: 24px;
-    color: #666;
+    color: #373232;
   }
   
   .fuel-products {
@@ -80,8 +81,14 @@
   }
   
   .landing-img {
-    height: 80px;
+    height: 150px;
+    width: 150px;
+    margin: auto;
     margin-bottom: 10px;
+  }
+  .landing-img:hover {
+    scale: 1.1;
+    /* zoom: normal; */
   }
    
   .landing-h3 {

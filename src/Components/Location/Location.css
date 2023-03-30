@@ -1,0 +1,19 @@
+.LQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: 65vh;
+    width: 60vw;
+    /* line-height: 10px; */
+    font-size: 20px;
+    margin: auto;
+}
+.placeorder{
+    background-color: yellow;
+    color: red;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
