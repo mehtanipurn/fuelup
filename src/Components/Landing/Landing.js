@@ -1,8 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Landing.css';
 
+
 function Landing() {
+  const [entity, setEntity] = useState({
+    name: "",
+    price: 0
+  });
+  const navigate = useNavigate();
   return (
     <>
       <header className="landing-header">
@@ -13,14 +19,40 @@ function Landing() {
         <div className="fuel-products">
           <div className="product">
             <h2 className="landing-h2">Diesel</h2>
-            <p className = "landing-p">Price per liter: 90.20 Rs</p>
-            <Link to ="/Location"> <button className='landing-button'>Order Now</button> </Link>
+            <p className = "landing-p">Price per liter: 90.53 Rs</p>
+             <button className='landing-button' onClick={() => {
+               const newEntity = {
+                name: "Diesel",
+                price: 90.53
+              };
+              setEntity(newEntity);
+              navigate("/Location", {
+                state: {
+                  entityName: newEntity.name,
+                  entityPrice: newEntity.price
+                }
+              });
+              console.log(newEntity);
+            }}>Order Now</button> 
           </div>
           
           <div className="product">
             <h2 className = "landing-h2">Petrol</h2>
-            <p className = "landing-p">Price per liter: 95.13 Rs</p>
-            <Link to ="/Location"> <button className='landing-button'>Order Now</button> </Link>
+            <p className = "landing-p">Price per liter: 95.49 Rs</p>
+            <button className='landing-button' onClick={() => {
+              const newEntity = {
+                name: "Petrol",
+                price: 95.49
+              };
+              setEntity(newEntity);
+              navigate("/Location", {
+                state: {
+                  entityName: newEntity.name,
+                  entityPrice: newEntity.price
+                }
+              });
+              console.log("Clicked P");
+            }}>Order Now</button>
           </div>
           </div>
       </div>

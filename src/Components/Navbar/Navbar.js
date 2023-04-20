@@ -28,7 +28,7 @@ function Navbar(props) {
     <nav className="navbar">
       <div className="logo">
         <img src="https://cdn.vectorstock.com/i/1000x1000/19/52/fuel-icon-vector-981952.webp" alt="Logo" />
-        <span >FuelUp</span>
+        <span className="navspan" >FuelUp</span>
       </div>
       <ul className="nav-links">
         <li className='navbar-li'><Link to = "/" > Home</Link></li>

@@ -14,6 +14,11 @@ import {
 import { Link, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, updateProfile} from "firebase/auth";
 import auth from "../../firebaseConfig";
+// import React, { useState, useEffect } from 'react';
+import { db } from '../../firebaseConfig';
+import { doc, setDoc } from "firebase/firestore"; 
+import "../../firebaseConfig"
+// import auth from '../../firebaseConfig';
 function App() {
   
   const [justifyActive, setJustifyActive] = useState('tab1');;
@@ -45,6 +50,10 @@ function App() {
         await updateProfile(user, {
           displayName: values.name,
         })
+        await setDoc(doc(db, "users", user.uid), {
+          name: values.name,
+          email: values.email,
+        });
         navigate("/");
         
 

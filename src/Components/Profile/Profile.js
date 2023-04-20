@@ -2,6 +2,7 @@ import { signOut } from "firebase/auth";
 import React, {useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import auth from "../../firebaseConfig";
+// import { doc, getDoc } from "firebase/firestore";
 // import axios from "axios";
 import "./profile.css"
 const Profile = (props) => {
